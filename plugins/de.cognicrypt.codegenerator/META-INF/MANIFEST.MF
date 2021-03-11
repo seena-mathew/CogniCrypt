@@ -23,17 +23,16 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.workbench.texteditor,
  org.eclipse.osgi,
  org.eclipse.equinox.registry
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: lib/claferchocoig.jar,
  .,
- src/main/resources/,
- src/main/java/,
  lib/dom4j-2.0.0.jar,
  lib/saxon9he.jar,
  lib/test.jar
 Automatic-Module-Name: de.cognicrypt.codegenerator
 Bundle-Vendor: TU Darmstadt, Paderborn University
+Import-Package: javax.xml.bind
 Export-Package: de.cognicrypt.codegenerator,
  de.cognicrypt.codegenerator.actions,
  de.cognicrypt.codegenerator.crysl,
